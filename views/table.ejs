@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script> -->
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/table-views.js"></script>
+  </head>
+
+  <body>
+    <button id="startUpdateTimerButton" type="button">更新開始</button>
+    <button id="stopUpdateTimerButton" type="button">更新停止</button>
+    <table id="table" border="1">
+      <thead>
+        <tr>
+          <td>No</td>
+          <td>時間</td>
+          <td>センサー1</td>
+          <td>センサー2</td>
+          <td>センサー3</td>
+        </tr>
+      </thead>
+      </tbody id="table_body">
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <a href="/graph">グラフ</a><br />
+    <a href="/setting">設定</a>
+  </body>
+</html>
