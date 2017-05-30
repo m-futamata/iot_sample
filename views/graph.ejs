@@ -33,11 +33,21 @@
       }
     </style>
     <!-- <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> -->
-    <script src="/javascripts/d3.min.js"></script>
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/d3.v3.min.js"></script>
+    <!-- <script src="/javascripts/graph-bundle.js"></script> -->
     <script>
+      $(function() {
+        $('#graphUpdate').click(function(e) {
+          alert("a");
+        });
+      });
     </script>
   </head>
   <body>
+    <button id="graphUpdate" type="button">グラフ更新</button><br />
+    <a href="/graphUpdate">グラフ更新</a><br />
+ <!--
     <div id="d3graph"></div>
     <script>
         window.addEventListener("loaded", update, false);
@@ -135,6 +145,7 @@
 
         setInterval(generateData, 500);
         setInterval(update, 500);
+ -->
     </script>
     <a href="/table">表</a><br />
     <a href="/setting">設定</a>

@@ -11,6 +11,7 @@ var graph = require('./routes/graph');
 var table = require('./routes/table');
 var setting = require('./routes/setting');
 var update = require('./routes/update');
+var graphUpdate = require('./routes/graph-update');
 
 var users = require('./routes/users');
 
@@ -36,6 +37,7 @@ app.use('/graph', graph);
 app.use('/table', table);
 app.use('/setting', setting);
 app.use('/update', update);
+app.use('/graphUpdate', graphUpdate);
 
 app.use('/users', users);
 
